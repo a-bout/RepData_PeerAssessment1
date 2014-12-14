@@ -64,7 +64,7 @@ names(aggregatedFull) <- c("date", "totalSteps")
 hist(aggregatedFull$totalSteps, xlab="Total number of steps (per day)", main="Total number of steps(without missing values)")
 ```
 
-![plot of chunk Total number of steps (after filling)](figure/Total number of steps (after filling)-1.png) 
+![plot of chunk After filling](figure/After filling-1.png) 
 
 ```r
 stepMeanFull <- mean(aggregatedFull$totalSteps)

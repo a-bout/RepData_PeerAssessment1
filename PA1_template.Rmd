@@ -40,7 +40,7 @@ totalNa <- sum(is.na(data))
 The total count of missing values is `r totalNa`
 
 After some comparison I found out that using interval median for filling missing values is the most suitable strategy.This strategy takes into account missing data across different dates and though is more relevant.
-```{r Total number of steps (after filling)}
+```{r After filling}
 library(plyr)
 dataFull <- plyr::join(data, intervalMean, by = "interval")
 naIndex <- is.na(dataFull$steps)
